@@ -36,10 +36,10 @@ function checkAnswer(currentLevel){
     gamePattern = [];
     $("body").addClass("game-over");
     var audio = new Audio("sounds/wrong.mp3");
-    audio.play();
     setTimeout(function(){
       $("body").removeClass("game-over");
     },100);
+    audio.play();
   }
 }
 
